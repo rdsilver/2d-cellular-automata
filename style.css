@@ -54,3 +54,7 @@ td.selected {
 #info a{
 	color: rgb(33, 133, 213);
 }
+
+#default_canvas0 {
+	cursor: default;
+}
