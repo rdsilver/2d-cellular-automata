@@ -1,0 +1,56 @@
+body {
+	padding: 0; margin: 0;
+	background-color: rgb(48, 56, 65);
+}
+
+td {
+	width: 10px;
+	height: 12px;
+	background-color: rgb(243, 243, 243);
+}
+
+td:hover {
+	background-color: rgb(160, 160, 160);
+}
+
+td.selected {
+	background-color: rgb(33, 133, 213);
+}
+
+#info {
+	float: left;
+	margin-left: 33%;
+}
+
+#neighborhood {
+	width: 73px ;
+  	margin: auto;
+  	float: left;
+  	margin-left:6%;
+}
+
+#controls {
+	float: left;
+	margin-left:7.5%;
+}
+
+#info p{
+	color: white;
+	margin: 0px;
+}
+
+#neighborhood p{
+	color: white;
+	margin: 0px;
+	padding-left: 2px;
+	margin-left: -11px;
+}
+
+#controls p{
+	color:white;
+	margin: 0px;
+}
+
+#info a{
+	color: rgb(33, 133, 213);
+}

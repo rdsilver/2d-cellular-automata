@@ -1,0 +1,39 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script language="javascript" type="text/javascript" src="http://p5js.org/js/p5.min.js"></script>
+  <script src="http://peterolson.github.com/BigInteger.js/BigInteger.min.js"></script>
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script language="javascript" type="text/javascript" src="selecting_neighbors.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div id="sketch"></div>
+  <div id="Info">
+      <p>Info</p>
+      <p id='cells_alive'>% Cells Alive : </p>
+      <p id='cells_dead'>% Cells Dead : </p>
+      <p id='generations'>Generations : </p>
+      <p><a href="https://en.wikipedia.org/wiki/Cellular_automaton">What is even going on?</a></p>
+    </div>
+	<div id="neighborhood">
+		<p>Neighborhood</p>
+		<table>
+			<tr><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td></tr>
+			<tr><td></td><td></td><td></td><td></td><td></td></tr>
+		</table>
+    </div>
+    <div id="controls">
+    	<p>Click on grid to inverse cell state</p>
+    	<p>N - New Rule</p>
+    	<p>R - Restart Current Rule</p>
+    	<p>S - Scramble Current Rule</p>
+    	<p>Click cells to include in neighborhood</p>
+    </div>
+</body>
+</html>
