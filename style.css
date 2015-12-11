@@ -17,21 +17,8 @@ td.selected {
 	background-color: rgb(33, 133, 213);
 }
 
-#info {
-	float: left;
-	margin-left: 33%;
-}
-
 #neighborhood {
 	width: 73px ;
-  	margin: auto;
-  	float: left;
-  	margin-left:6%;
-}
-
-#controls {
-	float: left;
-	margin-left:7.5%;
 }
 
 #info p{
@@ -43,7 +30,7 @@ td.selected {
 	color: white;
 	margin: 0px;
 	padding-left: 2px;
-	margin-left: -11px;
+	margin-left: -18px;
 }
 
 #controls p{
@@ -57,4 +44,30 @@ td.selected {
 
 #defaultCanvas0 {
 	cursor: default;
+}
+
+#container {
+    width:100%;
+    text-align:center;
+}
+
+.left {
+    float:left;
+    text-align:left;
+    padding-left: 10px;
+}
+
+.center {
+    display: inline-block;
+    margin:0 auto;
+}
+
+.right {
+    float: right;
+    padding-right: 10px;
+    text-align: left;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
 }
