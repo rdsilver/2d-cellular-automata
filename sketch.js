@@ -93,11 +93,11 @@ function RuleSet() {
 }
 
 function update_info() {
-  document.getElementById('generations').innerHTML = "Generations : " + grid.steps;
+  document.getElementById('generations').innerHTML = "Generations : <span class = 'blue'>" + grid.steps + '</span>';
 
   var cells_p_alive = ((grid.cells_alive/(grid.x * grid.y)) * 100).toFixed(2);
-  document.getElementById('cells_alive').innerHTML = "% Cells Alive : " + cells_p_alive;
-  document.getElementById('cells_dead').innerHTML = "% Cells Dead : " + (100 - cells_p_alive).toFixed(2);
+  document.getElementById('cells_alive').innerHTML = "% Cells Alive : <span class = 'blue'>" + cells_p_alive + '</span>';
+  document.getElementById('cells_dead').innerHTML = "% Cells Dead : <span class = 'blue'>" + (100 - cells_p_alive).toFixed(2) + '</span>';
 }
 
 function set2dArrayToZero(array) {
@@ -292,7 +292,7 @@ function baseConvert(src, from_base, to_base, src_symbol_table, dest_symbol_tabl
   // Modified by MLM to work with BigInteger: https://github.com/peterolson/BigInteger.js
   // This is able to convert extremely large numbers; At any base equal to or less than the symbol table length
   src = '' + src;
-  base_symbols = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.";
+  base_symbols = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz>";
   // Default the symbol table to a nice default table that supports up to base 63
   src_symbol_table = src_symbol_table ? src_symbol_table : base_symbols;
   // Default the desttable equal to the srctable if it isn't defined
