@@ -271,7 +271,7 @@ var ruleset = function () {
   var temp = new RuleSet();
 
   if (HashString['r'] === undefined) {
-    HashString['r'] = 'DXp';
+    HashString['r'] = '85w';
   }
 
   temp = new RuleSet();
